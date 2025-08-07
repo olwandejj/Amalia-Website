@@ -202,3 +202,15 @@ a {
     padding: 2rem 0;
     margin-top: 3rem;
 }
+
+.footer-social {
+    margin-top: 1rem;
+}
+.footer-social a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+.footer-social a:hover {
+    opacity: 0.7;
+}
