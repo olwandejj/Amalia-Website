@@ -180,18 +180,29 @@ a {
     margin-bottom: 1rem;
 }
 
-.read-more-btn {
+/* --- Green Button Animation --- */
+.read-more-btn,
+a.read-more-btn,
+button.read-more-btn {
     display: inline-block;
     background: var(--primary-color);
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     margin-top: 1rem;
-    transition: background 0.3s ease;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(76,175,80,0.08);
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
 }
 
-.read-more-btn:hover {
+.read-more-btn:hover,
+a.read-more-btn:hover,
+button.read-more-btn:hover {
     background: var(--secondary-color);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(46,125,50,0.15);
 }
 
 /* --- Footer --- */
