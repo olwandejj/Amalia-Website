@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold-Pressed Coconut Oil - Amalia Nutritive Supplies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background-image: url('images/products-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh; }
+        .product-detail-container { background: rgba(255,255,255,0.92); border-radius: 16px; max-width: 600px; margin: 3rem auto; padding: 2rem; box-shadow: 0 4px 16px rgba(0,0,0,0.08);}
+        .product-detail-container img { width: 100%; border-radius: 8px; margin-bottom: 1.5rem;}
+        .order-form label { display: block; margin-top: 1rem; font-weight: 600;}
+        .order-form input, .order-form textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; border-radius: 5px; border: 1px solid #ccc; font-size: 1rem;}
+        .order-form button { margin-top: 1.5rem;}
+    </style>
+</head>
+<body>
+    <div id="page-loader"><div class="loader-spinner"></div></div>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Amalia Nutritive Supplies Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="product-detail-container">
+            <img src="images/products/coconut-oil.jpg" alt="Cold-Pressed Coconut Oil">
+            <h2>Cold-Pressed Coconut Oil</h2>
+            <p>Organic, virgin coconut oil. Perfect for healthy cooking, skin, and hair care.</p>
+            <p><strong>Price:</strong> KSh 850 <small>(250ml)</small></p>
+            <form class="order-form" method="POST" action="mailto:olwandejames12@gmail.com?subject=Order%20for%20Cold-Pressed%20Coconut%20Oil" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="Email" required>
+                <label for="quantity">Quantity (bottles):</label>
+                <input type="number" id="quantity" name="Quantity" min="1" required>
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="Message" rows="3"></textarea>
+                <button type="submit" class="read-more-btn">Place Order via Email</button>
+            </form>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Amalia Nutritive Supplies. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://instagram.com/amalia_nutritive" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/instagram-icon.png" alt="Instagram" style="height:24px;vertical-align:middle;"></a>
+                <a href="https://web.facebook.com/amalianutritivesupplies/?_rdc=1&_rdr#" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook" style="height:24px;vertical-align:middle;"></a>
+                <a href="https://www.tiktok.com/@amalia.nutritive_" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/tiktok-icon.png" alt="TikTok" style="height:24px;vertical-align:middle;"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
